@@ -264,8 +264,8 @@
         "name": "EmailJS"
       }
     ],
-    "website": "#",
-    "github": "#",
+    "website": "https://leeyewon-portfolio.vercel.app/",
+    "github": "https://github.com/hol3161-a11y/portfolio-react",
     "overview": "Portfolio는 저의 성장 과정과 기술 역량, 프로젝트 경험을 소개하기 위해 제작한 개인 포트폴리오 웹사이트입니다. 민들레의 씨앗이 자라 꽃을 피우는 과정을 성장하는 개발자의 이미지와 연결하여 전체 콘셉트를 구성했습니다. Hero, About, Skills, Projects, Contact 섹션으로 구성했으며, 프로젝트 상세 페이지와 이메일 전송 기능을 통해 포트폴리오의 완성도를 높였습니다.",
     "projectInfo": {
       "projectType": "개인 프로젝트",
