@@ -133,9 +133,9 @@
 }
 
 .dandelion {
-  width: 330px;
+  width: 320px;
   position: absolute;
-  right: 8%;
+  right: 10%;
   bottom: 0;
   z-index: 4;
   opacity: 0.9;
@@ -151,23 +151,23 @@
 }
 
 .seed01 {
-  width: 55px;
-  left: 45%;
-  top: 15%;
+  width: 35px;
+  left: 43%;
+  top: 18%;
   animation-delay: 0s;
 }
 
 .seed02 {
-  width: 50px;
-  left: 72%;
-  top: 43%;
+  width: 45px;
+  left: 69%;
+  top: 40%;
   animation-delay: 5s;
 }
 
 .seed03 {
-  width: 50px;
+  width: 70px;
   left: 52%;
-  top: 37%;
+  top: 40%;
   animation-delay: 2s;
 }
 
@@ -179,16 +179,16 @@
 }
 
 .seed05 {
-  width: 60px;
-  right: 40%;
-  top: 75%;
+  width: 45px;
+  right: 27%;
+  top: 80%;
   animation-delay: 4s;
 }
 
 .seed06 {
   width: 30px;
-  right: 10%;
-  top: 15%;
+  right: 20%;
+  top: 21%;
   animation-delay: 5s;
 }
 
@@ -244,14 +244,14 @@
   }
 
   .dandelion {
-    width: 250px;
+    width: 220px;
     right: 3%;
   }
 
   .seed01 {
-    width: 20px;
-    left: 45%;
-    top: 15%;
+    width: 35px;
+    left: 65;
+    top: 20%;
     animation-delay: 0s;
   }
 
@@ -263,17 +263,14 @@
   }
 
   .seed03 {
-    width: 20px;
-    left: 60%;
+    width: 30px;
+    left: 55%;
     top: 35%;
     animation-delay: 2s;
   }
 
   .seed04 {
-    width: 20px;
-    left: 20%;
-    top: 30%;
-    animation-delay: 3s;
+    display: none;
   }
 
   .seed05 {
@@ -344,7 +341,7 @@
   .seed01 {
     width: 25px;
     left: 62%;
-    top: 16%;
+    top: 30%;
   }
 
   .seed02 {
@@ -397,6 +394,7 @@
 
     p {
       font-size: 14px;
+      width: 70%;
 
       br {
         display: none;
@@ -424,8 +422,8 @@
   }
 }
 
-@media (max-width: 375px) {
-  
+@media (max-width: 376px) {
+
   .heroText {
     top: 20%;
 
@@ -443,7 +441,7 @@
   }
 
   .dandelion {
-    width: 200px;
+    width: 160px;
     right: 4%;
   }
 }

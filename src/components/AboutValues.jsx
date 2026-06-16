@@ -1,6 +1,6 @@
 import "../styles/About.scss";
 import { useState } from "react";
-import "../styles/Skills.scss";
+import "../styles/About.scss";
 import skills from '../data/skills.json';
 import values from "../data/values.json";
 

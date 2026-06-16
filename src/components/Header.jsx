@@ -4,7 +4,7 @@ import "../styles/Header.scss";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +49,7 @@ function Header() {
               className={activeSection === "home" ? "active" : ""}
               onClick={() => setActiveSection("home")}
             >
-              <span>01.</span> HOME
+              HOME
             </a>
 
             <a
@@ -57,7 +57,7 @@ function Header() {
               className={activeSection === "about" ? "active" : ""}
               onClick={() => setActiveSection("about")}
             >
-              <span>02.</span> ABOUT
+              ABOUT
             </a>
 
             <a
@@ -65,7 +65,7 @@ function Header() {
               className={activeSection === "projects" ? "active" : ""}
               onClick={() => setActiveSection("projects")}
             >
-              <span>03.</span> PROJECTS
+              PROJECTS
             </a>
 
             <a
@@ -73,7 +73,7 @@ function Header() {
               className={activeSection === "contact" ? "active" : ""}
               onClick={() => setActiveSection("contact")}
             >
-              <span>04.</span> CONTACT
+              CONTACT
             </a>
           </nav>
 
@@ -84,6 +84,13 @@ function Header() {
           </button>
         </div>
       </header>
+
+      {isOpen && (
+        <div
+          className="menuOverlay"
+          onClick={() => setIsOpen(false)}
+        ></div>
+      )}
 
       <div className={`mobileMenu ${isOpen ? "open" : ""}`}>
         <button className="closeBtn" onClick={() => setIsOpen(false)}>
