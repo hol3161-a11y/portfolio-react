@@ -1,0 +1,26 @@
+[
+  {
+    "num": "01",
+    "img": "/image/ic_growth.png",
+    "title": "꾸준한 성장",
+    "desc": "새로운 기술을 배우고 프로젝트에 적용하며 지속적으로 성장하고 있습니다."
+  },
+  {
+    "num": "02",
+    "img": "/image/ic_challenge.png",
+    "title": "도전을 즐기는 자세",
+    "desc": "낯선 기술도 두려워하지 않고 직접 부딪히며 해결해 나가고 있습니다."
+  },
+  {
+    "num": "03",
+    "img": "/image/ic_problem.png",
+    "title": "문제 해결",
+    "desc": "에러의 원인을 분석하고 다양한 방법으로 해결책을 찾습니다."
+  },
+  {
+    "num": "04",
+    "img": "/image/ic_communication.png",
+    "title": "협업과 소통",
+    "desc": "GitHub와 Figma를 활용하여 원활한 협업 경험을 쌓았습니다."
+  }
+]

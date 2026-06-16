@@ -1,0 +1,339 @@
+[
+  {
+    "num": "01",
+    "slug": "weather-mood",
+    "title": "Weather Mood",
+    "type": "모바일 기반 날씨 감성 추천 서비스",
+    "favicon": "/image/weather-mood_favicon.ico.png",
+    "desc": "실시간 날씨 데이터를 기반으로 코디, 음악, 야외활동을 추천하는 라이프스타일 서비스입니다.",
+    "img": "/image/weather-mood-thumb.png",
+    "detail": "/image/project_weathermood_detail.png",
+    "tags": ["Figma", "HTML", "CSS", "JavaScript"],
+    "skills": [
+      {
+        "name": "Figma",
+        "img": "/image/ic_figma.svg"
+      },
+      {
+        "name": "HTML",
+        "img": "/image/ic_html.svg"
+      },
+      {
+        "name": "CSS",
+        "img": "/image/ic_css.svg"
+      },
+      {
+        "name": "JavaScript",
+        "img": "/image/ic_js.svg"
+      },
+      {
+        "name": "Swiper",
+        "img": "/image/ic_swiper.svg"
+      },
+      {
+        "name": "공공데이터포털 날씨 API"
+      }
+    ],
+    "website": "https://weather-mood-rho.vercel.app/",
+    "github": "https://github.com/hol3161-a11y/WeatherMood",
+    "overview": "Weather Mood는 실시간 날씨 데이터를 기반으로 사용자의 하루 분위기에 맞는 코디, 음악, 야외활동을 추천하는 모바일 라이프스타일 서비스입니다. 단순한 날씨 정보 제공을 넘어 현재 날씨와 기온에 어울리는 콘텐츠를 추천하여 사용자의 일상을 더욱 풍부하게 만들어주는 것을 목표로 제작했습니다.",
+    "projectInfo": {
+      "projectType": "팀 프로젝트 | 4명",
+      "period": "2026.02 ~ 2026.03",
+      "role": "현재 날씨 화면과 상세 날씨 화면의 UI를 구현하고 공공데이터 API를 연동하여 실시간 날씨 데이터를 수집했습니다. 또한 API로 받아온 데이터를 가공하여 현재 날씨, 시간별 예보, 미세먼지 등 필요한 정보를 사용자에게 보기 쉽게 화면에 출력하는 기능을 담당했습니다.",
+      "contribution": "30%",
+      "category": "모바일 기반 날씨 감성 추천 서비스"
+    },
+    "features": [
+      "AI 캐릭터를 활용한 날씨 정보 제공",
+      "현재 날씨 및 상세 날씨 조회",
+      "미세먼지 정보 제공",
+      "기온 기반 맞춤형 코디 추천",
+      "날씨 무드 기반 음악 플레이리스트 추천",
+      "날씨에 맞는 야외활동 추천",
+      "코디 및 음악 보관함 기능"
+    ],
+    "trouble": "공공데이터 API는 발표 기준 시간이 정해져 있어 실제 호출 시간과 맞지 않으면 데이터가 비어오는 문제가 발생했습니다. 이를 해결하기 위해 현재 시간을 기준으로 가장 가까운 유효 발표 시간을 계산하는 로직을 구현하고 해당 시간의 데이터를 요청하도록 수정하여 안정적으로 날씨 정보를 제공할 수 있도록 개선했습니다.",
+    "learned": "이번 프로젝트를 통해 공공데이터 API의 데이터 구조를 분석하고 필요한 정보를 가공하여 사용자에게 제공하는 경험을 쌓았습니다. 또한 실시간 데이터를 활용한 서비스 구현 과정에서 예외 처리와 데이터 관리의 중요성을 배우고 사용자 경험을 고려한 정보 제공 방식을 고민할 수 있었습니다."
+  },
+  {
+    "num": "02",
+    "slug": "store-pilot",
+    "title": "StorePilot",
+    "type": "AI 기반 매장 운영 관리 시스템",
+    "desc": "매출 분석, 주문 관리, 직원 스케줄, 인건비 관리를 통합 제공하는 AI 기반 매장 운영 시스템입니다.",
+    "img": "/image/store-pilot-thumb.png",
+    "detail": "/image/project_storepliot_detail.png",
+    "favicon": "/image/storePilot_favicon.ico.png",
+    "tags": ["Next.js", "SCSS", "MongoDB", "JavaScript"],
+    "skills": [
+      {
+        "name": "Figma",
+        "img": "/image/ic_figma.svg"
+      },
+      {
+        "name": "Next.js",
+        "img": "/image/ic_nextjs.svg"
+      },
+      {
+        "name": "JavaScript",
+        "img": "/image/ic_js.svg"
+      },
+      {
+        "name": "SCSS",
+        "img": "/image/ic_scss.svg"
+      },
+      {
+        "name": "MongoDB",
+        "img": "/image/ic_mongodb.svg"
+      },
+      {
+        "name": "Zustand",
+        "img": "/image/ic_zustand.svg"
+      },
+      {
+        "name": "Google AI Studio"
+      }
+    ],
+    "website": "https://team-store-pilot.vercel.app/",
+    "github": "https://github.com/hol3161-a11y/Team-StorePilot",
+    "overview": "StorePilot은 복잡한 매장 운영 데이터를 보다 직관적이고 효율적으로 관리할 수 있도록 개발한 AI 기반 매장 관리 시스템입니다. 매출 분석, 주문 관리, 직원 스케줄 및 인건비 관리 기능을 통합하여 운영자가 매장 상황을 한눈에 파악할 수 있도록 구성했습니다. 또한 AI를 활용한 데이터 분석과 챗봇 인터페이스를 통해 반복적인 관리 업무를 줄이고, 운영 효율성을 높이는 것을 목표로 제작했습니다.",
+    "projectInfo": {
+      "projectType": "팀 프로젝트 | 5명",
+      "period": "2026.04 ~ 2026.05",
+      "role": "직원 관리 페이지와 근무표 관리 페이지를 담당했습니다. 직원 등록, 수정, 삭제 기능을 구현하고 MongoDB와 연동하여 직원 데이터를 관리했습니다. 또한 등록된 직원 정보를 기반으로 요일별 근무표를 구성하고, 근무 시간과 시급 데이터를 활용해 일별, 주별, 월별 인건비를 계산하는 화면을 구현했습니다.",
+      "contribution": "30%",
+      "category": "AI 기반 매장 운영 관리 시스템"
+    },
+    "features": [
+      "직원 등록, 수정, 삭제 기능",
+      "직원 정보 기반 근무표 관리",
+      "요일별 근무 스케줄 확인",
+      "일/주/월 인건비 계산",
+      "매장 운영 데이터 시각화",
+      "AI 기반 매출 및 운영 분석",
+      "챗봇 인터페이스를 통한 매장 관리 지원"
+    ],
+    "trouble": "직원 정보를 수정할 때 기존 데이터와 새로 입력한 데이터가 정확하게 구분되지 않아 다른 직원 정보에 영향을 줄 수 있는 문제가 있었습니다. 이를 해결하기 위해 수정 중인 직원의 id를 기준으로 상태를 분리하고, 저장 시 해당 id와 일치하는 데이터만 업데이트되도록 로직을 개선했습니다. 또한 직원 정보가 변경되었을 때 근무표와 인건비 계산에도 반영될 수 있도록 데이터 흐름을 점검했습니다.",
+    "learned": "이번 프로젝트를 통해 관리자 서비스에서 데이터의 흐름을 설계하는 방법을 배웠습니다. 단순히 화면을 구현하는 것뿐만 아니라 직원 정보, 근무표, 인건비 계산처럼 서로 연결된 데이터를 어떻게 관리해야 하는지 이해할 수 있었습니다. 또한 CRUD 기능과 MongoDB 연동, 반응형 관리자 UI 구성 경험을 쌓을 수 있었습니다."
+  },
+  {
+    "num": "03",
+    "slug": "learnhub",
+    "title": "LearnHub",
+    "type": "교육검색 플랫폼 웹사이트",
+    "desc": "교육과정을 검색하고 찜하기, 최근 본 강의, 수강 관리를 할 수 있는 교육 플랫폼입니다.",
+    "img": "/image/project_learnhub.png",
+    "detail": "/image/project_learnhub_detail.png",
+    "favicon": "/image/learnhub_favicon.ico.png",
+    "tags": ["Next.js", "JavaScript", "SCSS", "NextAuth"],
+    "skills": [
+      {
+        "name": "Figma",
+        "img": "/image/ic_figma.svg"
+      },
+      {
+        "name": "Next.js",
+        "img": "/image/ic_nextjs.svg"
+      },
+      {
+        "name": "JavaScript",
+        "img": "/image/ic_js.svg"
+      },
+      {
+        "name": "SCSS",
+        "img": "/image/ic_scss.svg"
+      },
+      {
+        "name": "Swiper",
+        "img": "/image/ic_swiper.svg"
+      },
+      {
+        "name": "NextAuth"
+      },
+      {
+        "name": "LocalStorage"
+      }
+    ],
+    "website": "https://learnhub-nextjs.vercel.app/",
+    "github": "https://github.com/hol3161-a11y/learnhub-nextjs",
+    "overview": "LearnHub는 온라인과 오프라인 교육과정을 한 곳에서 검색하고 관리할 수 있도록 제작한 교육 플랫폼입니다. 사용자는 원하는 키워드나 카테고리로 강의를 탐색할 수 있으며, 관심 있는 강의는 찜하기로 저장하고 최근 본 강의와 수강 중인 강의를 따로 확인할 수 있습니다. 교육과정 정보를 보다 쉽고 빠르게 찾을 수 있도록 검색, 필터, 상세 페이지, 마이페이지 기능을 중심으로 구성했습니다.",
+    "projectInfo": {
+      "projectType": "개인 프로젝트",
+      "period": "2026.05 ~ 2026.06",
+      "role": "전체 기획, 디자인, 프론트엔드 개발을 담당했습니다. 강의 목록, 상세 페이지, 검색 및 카테고리 필터, 찜하기, 최근 본 강의, 나의 강의, 로그인 및 온보딩 페이지를 구현했습니다. NextAuth를 활용한 소셜 로그인 흐름과 LocalStorage를 활용한 사용자별 저장 기능도 함께 구성했습니다.",
+      "contribution": "100%",
+      "category": "온·오프라인 교육 플랫폼"
+    },
+    "features": [
+      "강의 검색 및 키워드 검색",
+      "카테고리, 방식, 가격, 상태별 필터",
+      "추천 강의 및 신규 강의 출력",
+      "강의 상세 정보 확인",
+      "찜한 강의 저장 및 관리",
+      "최근 본 강의 저장",
+      "수강 중인 강의 관리",
+      "소셜 로그인 및 온보딩",
+      "마이페이지 프로필 관리"
+    ],
+    "trouble": "검색어나 카테고리 필터를 적용한 뒤 새로고침하거나 뒤로가기를 했을 때 검색 조건과 페이지네이션 상태가 초기화되는 문제가 있었습니다. 이를 해결하기 위해 URL Query를 활용하여 keyword, category, page 값을 주소에 반영하고, 페이지 진입 시 해당 값을 다시 읽어와 상태가 유지되도록 개선했습니다.",
+    "learned": "Next.js App Router 구조와 클라이언트 컴포넌트의 상태 관리 방식을 학습할 수 있었습니다. 또한 사용자가 강의를 탐색하는 흐름을 고려하여 검색, 필터, 상세 페이지, 마이페이지가 자연스럽게 연결되도록 설계하는 경험을 했습니다."
+  },
+  {
+    "num": "04",
+    "slug": "todo-list",
+    "title": "Todo List",
+    "type": "할 일 관리 앱 서비스",
+    "desc": "할 일 추가, 수정, 삭제와 완료 상태 관리를 지원하는 웹 애플리케이션입니다.",
+    "img": "/image/project_todolist.png",
+    "detail": "/image/project_todolist_detail.png",
+    "favicon": "/image/Todolist_favicon.ico.png",
+    "tags": ["React", "Node.js", "MongoDB", "CSS"],
+    "skills": [
+      {
+        "name": "React",
+        "img": "/image/ic_react.svg"
+      },
+      {
+        "name": "Node.js",
+        "img": "/image/ic_node.svg"
+      },
+      {
+        "name": "MongoDB",
+        "img": "/image/ic_mongodb.svg"
+      },
+      {
+        "name": "CSS",
+        "img": "/image/ic_scss.svg"
+      }
+    ],
+    "website": "https://react-todo-rbz1.vercel.app/",
+    "github": "#",
+    "overview": "Todo List는 사용자가 해야 할 일을 등록하고 진행 상태를 관리할 수 있도록 제작한 할 일 관리 웹 애플리케이션입니다. 할 일을 추가하고 수정, 삭제할 수 있으며 완료 여부에 따라 진행 중인 할 일과 완료된 할 일을 구분해서 확인할 수 있습니다. 단순한 기능이지만 React 상태 관리와 서버 연동, CRUD 흐름을 익히기 위해 제작했습니다.",
+    "projectInfo": {
+      "projectType": "개인 프로젝트",
+      "period": "2026.03",
+      "role": "전체 UI 구현과 프론트엔드 상태 관리, Node.js 서버 연동, MongoDB CRUD 기능을 담당했습니다. 할 일 추가, 수정, 삭제, 완료 상태 변경, 필터 기능을 구현하고 사용자 입력값이 화면에 바로 반영되도록 구성했습니다.",
+      "contribution": "100%",
+      "category": "할 일 관리 웹 애플리케이션"
+    },
+    "features": [
+      "할 일 추가 기능",
+      "할 일 수정 기능",
+      "할 일 삭제 기능",
+      "완료 및 진행 상태 변경",
+      "전체, 진행, 완료 필터링",
+      "할 일 개수 표시",
+      "MongoDB 기반 데이터 저장"
+    ],
+    "trouble": "완료 상태를 변경했을 때 서버에는 반영되지만 화면에서는 바로 변경되지 않는 문제가 있었습니다. 서버 요청 후 데이터를 다시 불러오는 방식과 state를 즉시 업데이트하는 방식을 함께 적용하여 사용자가 상태 변경 결과를 바로 확인할 수 있도록 개선했습니다.",
+    "learned": "React의 useState를 활용한 상태 관리와 Node.js, MongoDB를 활용한 CRUD 흐름을 익힐 수 있었습니다. 또한 사용자의 입력, 서버 요청, 화면 반영이 어떤 순서로 이루어져야 자연스러운 UI가 되는지 이해할 수 있었습니다."
+  },
+  {
+    "num": "05",
+    "slug": "portfolio",
+    "title": "Portfolio",
+    "type": "개인 포트폴리오 웹사이트",
+    "desc": "저의 소개, 기술 역량, 프로젝트 경험을 보여주는 반응형 포트폴리오 웹사이트입니다.",
+    "img": "/image/project_portfolio.png",
+    "detail": "/image/project_portfolio_detail.png",
+    "favicon": "/image/protfolio_favicon.ico.png",
+    "tags": ["React", "SCSS", "EmailJS", "Swiper"],
+    "skills": [
+      {
+        "name": "React",
+        "img": "/image/ic_react.svg"
+      },
+      {
+        "name": "SCSS",
+        "img": "/image/ic_scss.svg"
+      },
+      {
+        "name": "JavaScript",
+        "img": "/image/ic_js.svg"
+      },
+      {
+        "name": "Swiper",
+        "img": "/image/ic_swiper.svg"
+      },
+      {
+        "name": "Figma",
+        "img": "/image/ic_figma.svg"
+      },
+      {
+        "name": "EmailJS"
+      }
+    ],
+    "website": "#",
+    "github": "#",
+    "overview": "Portfolio는 저의 성장 과정과 기술 역량, 프로젝트 경험을 소개하기 위해 제작한 개인 포트폴리오 웹사이트입니다. 민들레의 씨앗이 자라 꽃을 피우는 과정을 성장하는 개발자의 이미지와 연결하여 전체 콘셉트를 구성했습니다. Hero, About, Skills, Projects, Contact 섹션으로 구성했으며, 프로젝트 상세 페이지와 이메일 전송 기능을 통해 포트폴리오의 완성도를 높였습니다.",
+    "projectInfo": {
+      "projectType": "개인 프로젝트",
+      "period": "2026.06",
+      "role": "전체 기획, 디자인, 프론트엔드 개발을 담당했습니다. 메인 페이지 섹션 구성, 반응형 레이아웃, 프로젝트 카드 슬라이드, 상세 페이지 이동, Contact 이메일 전송 기능, 민들레 콘셉트 애니메이션을 구현했습니다.",
+      "contribution": "100%",
+      "category": "개인 포트폴리오 웹사이트"
+    },
+    "features": [
+      "반응형 웹 디자인",
+      "Hero 메인 비주얼 구성",
+      "About Me 소개 섹션",
+      "기술 스택 카드 UI",
+      "프로젝트 카드 슬라이드",
+      "프로젝트 상세 페이지",
+      "Contact 이메일 전송 기능",
+      "민들레 콘셉트 애니메이션"
+    ],
+    "trouble": "각 섹션마다 보여주고 싶은 내용이 달라 전체적인 디자인 통일감을 유지하는 데 어려움이 있었습니다. 이를 해결하기 위해 메인 컬러와 포인트 컬러를 고정하고, 여백과 카드 스타일을 통일하여 전체 사이트가 하나의 콘셉트로 보이도록 조정했습니다.",
+    "learned": "개인 브랜딩을 웹사이트에 녹여내는 방법과 사용자에게 프로젝트 정보를 효과적으로 전달하는 UI 구성을 배웠습니다. 또한 반응형 레이아웃과 섹션별 애니메이션을 적용하면서 포트폴리오 사이트의 완성도를 높이는 경험을 했습니다."
+  },
+  {
+    "num": "06",
+    "slug": "now-news",
+    "title": "Now News",
+    "type": "뉴스 검색 서비스",
+    "desc": "네이버 뉴스 API를 활용해 최신 뉴스를 검색하고 원문 기사로 이동할 수 있는 뉴스 서비스입니다.",
+    "img": "/image/Now-News-thumb.png",
+    "detail": "/image/project_nownews_detail.png",
+    "favicon": "/image/nownews_favicon.ico.png",
+    "tags": ["Vue", "API", "SCSS", "JavaScript"],
+    "skills": [
+      {
+        "name": "Vue",
+        "img": "/image/ic_vue.svg"
+      },
+      {
+        "name": "JavaScript",
+        "img": "/image/ic_js.svg"
+      },
+      {
+        "name": "SCSS",
+        "img": "/image/ic_scss.svg"
+      },
+      {
+        "name": "Naver News API"
+      }
+    ],
+    "website": "https://news-beryl.vercel.app/",
+    "github": "https://github.com/hol3161-a11y/News",
+    "overview": "Now News는 사용자가 원하는 키워드나 카테고리의 뉴스를 검색하고 확인할 수 있는 뉴스 검색 서비스입니다. 네이버 뉴스 API를 활용하여 최신 뉴스 데이터를 받아오고, 카드형 UI로 제목, 설명, 날짜 정보를 보기 쉽게 구성했습니다. 사용자는 자세히 보기 버튼을 통해 해당 기사 원문 사이트로 이동할 수 있습니다.",
+    "projectInfo": {
+      "projectType": "개인 프로젝트",
+      "period": "2026.04",
+      "role": "전체 UI 구현과 API 데이터 출력 기능을 담당했습니다. 검색어 기반 뉴스 조회, 카테고리 필터, 뉴스 카드 UI, 원문 링크 이동 기능을 구현하고 API에서 받아온 데이터를 화면에 맞게 가공했습니다.",
+      "contribution": "100%",
+      "category": "뉴스 검색 서비스"
+    },
+    "features": [
+      "키워드 기반 뉴스 검색",
+      "뉴스 카테고리 필터",
+      "뉴스 카드 UI",
+      "제목, 설명, 날짜 정보 출력",
+      "자세히 보기 버튼",
+      "기사 원문 사이트 이동",
+      "API 데이터 예외 처리"
+    ],
+    "trouble": "API에서 받아온 데이터 중 이미지나 설명이 비어 있는 경우 카드 레이아웃이 어색하게 보이는 문제가 있었습니다. 기본 이미지와 대체 문구를 설정하여 데이터가 비어 있어도 화면이 안정적으로 유지되도록 개선했습니다.",
+    "learned": "외부 API 데이터를 받아와 화면에 출력하는 흐름을 익힐 수 있었습니다. 또한 API 데이터가 항상 완전하지 않을 수 있다는 점을 고려해 예외 처리를 적용하는 방법과 카드형 UI를 안정적으로 구성하는 방법을 배웠습니다."
+  }
+]

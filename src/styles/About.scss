@@ -1,0 +1,340 @@
+.aboutValues {
+  width: 100%;
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at 0% 100%, rgba(80, 140, 255, 0.16), transparent 32%),
+    radial-gradient(circle at 100% 100%, rgba(255, 214, 80, 0.25), transparent 32%),
+    #fbfcff;
+}
+
+.aboutInner {
+  width: calc(100% - 120px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 34px;
+
+  span {
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #2f6bff;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 800;
+    color: #2f6bff;
+    letter-spacing: 0.08em;
+  }
+}
+
+.valueList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.valueCard {
+  min-height: 350px;
+  padding: 34px 28px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(220, 226, 240, 0.8);
+  box-shadow: 0 18px 40px rgba(33, 54, 90, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s ease;
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(47, 107, 255, 0.08);
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    transition: 0.35s ease;
+  }
+
+  &:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 28px 60px rgba(33, 54, 90, 0.16);
+    border-color: rgba(47, 107, 255, 0.35);
+
+    &::after {
+      width: 120px;
+      height: 120px;
+      background: rgba(47, 107, 255, 0.12);
+    }
+
+    strong {
+      color: #2f6bff;
+      transform: translateX(6px);
+    }
+
+    .iconBox {
+      background: linear-gradient(135deg, #eef4ff, #fff6d8);
+      transform: scale(1.06);
+    }
+
+    .iconBox img {
+      transform: scale(1.08) rotate(-4deg);
+    }
+
+    h3 {
+      color: #2f6bff;
+    }
+  }
+
+  strong {
+    align-self: flex-start;
+    font-size: 15px;
+    font-weight: 800;
+    color: #f5b800;
+    transition: 0.35s ease;
+  }
+
+  .iconBox {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fff6d8, #eef4ff);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.35s ease;
+
+    img {
+      width: 95px;
+      height: 95px;
+      object-fit: contain;
+      transition: 0.35s ease;
+    }
+  }
+
+  h3 {
+    margin-bottom: 22px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #111a35;
+    transition: 0.35s ease;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4d5668;
+    word-break: keep-all;
+  }
+}
+
+.educationTitle {
+  margin-top: 90px;
+}
+
+.trainingBox {
+  padding: 34px 48px;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(220, 226, 240, 0.8);
+  box-shadow: 0 18px 40px rgba(33, 54, 90, 0.08);
+
+  display: grid;
+  grid-template-columns: 160px 220px 1fr;
+  align-items: center;
+  gap: 36px;
+
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: rgba(47, 107, 255, 0.3);
+    box-shadow: 0 28px 60px rgba(33, 54, 90, 0.15);
+
+    .trainingIcon {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #eef4ff, #fff6d8);
+    }
+
+    .trainingText h3 {
+      color: #2f6bff;
+    }
+
+    .trainingDate p {
+      transform: translateX(6px);
+    }
+  }
+}
+
+.trainingIcon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eaf2ff, #f4f8ff);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s ease;
+
+  img {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+  }
+}
+
+.trainingDate {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2f6bff;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      width: 1px;
+      height: 70px;
+      background: linear-gradient(#2f6bff, transparent);
+    }
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 700;
+    color: #2f6bff;
+    transition: 0.35s ease;
+  }
+}
+
+.trainingText {
+  h3 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #111a35;
+    transition: 0.35s ease;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #2f6bff;
+  }
+}
+
+.trainingTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+
+  span {
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #eef4ff;
+    color: #2f6bff;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutInner {
+    width: calc(100% - 60px);
+  }
+
+  .valueList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trainingBox {
+    grid-template-columns: 120px 1fr;
+  }
+
+  .trainingDate {
+    grid-column: 1 / 3;
+    order: 3;
+  }
+
+  .trainingText {
+    grid-column: 2 / 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutValues {
+    padding: 80px 0;
+  }
+
+  .aboutInner {
+    width: calc(100% - 32px);
+  }
+
+  .valueCard {
+    min-height: auto;
+    padding: 30px 24px;
+  }
+
+  .trainingBox {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+    text-align: center;
+  }
+
+  .trainingIcon {
+    margin: 0 auto;
+  }
+
+  .trainingDate {
+    grid-column: auto;
+    justify-content: center;
+
+    span::after {
+      display: none;
+    }
+  }
+
+  .trainingText {
+    grid-column: auto;
+  }
+
+  .trainingTags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .valueList {
+    grid-template-columns: 1fr;
+  }
+}
