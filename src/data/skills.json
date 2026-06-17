@@ -1,74 +1,74 @@
 [
-    {
-        "name": "HTML",
-        "img": "/image/ic_html.svg",
-        "desc": "구조적인 마크업",
-        "detail": "웹 표준과 접근성을 고려해 시맨틱 태그로 페이지 구조를 작성할 수 있습니다."
-    },
-    {
-        "name": "CSS",
-        "img": "/image/ic_css.svg",
-        "desc": "반응형 레이아웃 구현",
-        "detail": "Flex, Grid, Media Query를 활용해 다양한 디바이스에 대응하는 화면을 구현할 수 있습니다."
-    },
-    {
-        "name": "SCSS",
-        "img": "/image/ic_scss.svg",
-        "desc": "유지보수 가능한 스타일 관리",
-        "detail": "변수, 중첩 문법, 믹스인을 활용해 효율적으로 스타일을 관리할 수 있습니다."
-    },
-    {
-        "name": "JavaScript",
-        "img": "/image/ic_js.svg",
-        "desc": "동적 인터랙션 구현",
-        "detail": "이벤트 처리와 배열 메서드를 활용해 사용자 중심의 인터랙션을 구현할 수 있습니다."
-    },
-    {
-        "name": "React",
-        "img": "/image/ic_react.svg",
-        "desc": "컴포넌트 기반 개발",
-        "detail": "컴포넌트 단위로 UI를 구성하고 State와 Props를 활용해 화면을 개발할 수 있습니다."
-    },
-    {
-        "name": "Next.js",
-        "img": "/image/ic_nextjs.svg",
-        "desc": "풀스택 웹 애플리케이션 개발",
-        "detail": "App Router 기반으로 페이지를 구성하고 최적화된 웹 서비스를 개발할 수 있습니다."
-    },
-    {
-        "name": "Vue",
-        "img": "/image/ic_vue.svg",
-        "desc": "컴포넌트 기반 개발",
-        "detail": "재사용 가능한 컴포넌트를 활용하여 효율적인 화면을 구성하고, 반응형 데이터 바인딩으로 동적인 사용자 인터페이스를 구현할 수 있습니다."
-    },
-    {
-        "name": "Zustand",
-        "img": "/image/ic_zustand.svg",
-        "desc": "전역 상태 관리",
-        "detail": "간결한 상태 관리 라이브러리를 활용해 데이터를 효율적으로 관리할 수 있습니다."
-    },
-    {
-        "name": "MongoDB",
-        "img": "/image/ic_mongodb.svg",
-        "desc": "데이터베이스 활용",
-        "detail": "MongoDB를 활용해 데이터를 저장하고 조회하는 기능을 구현할 수 있습니다."
-    },
-    {
-        "name": "GitHub",
-        "img": "/image/ic_github.svg",
-        "desc": "버전 관리 및 협업",
-        "detail": "GitHub를 활용해 프로젝트 이력을 관리하고 협업할 수 있습니다."
-    },
-    {
-        "name": "Vercel",
-        "img": "/image/ic_vercel.svg",
-        "desc": "프로젝트 배포",
-        "detail": "Vercel을 활용해 웹 서비스를 배포하고 환경 변수를 관리할 수 있습니다."
-    },
-    {
-        "name": "Figma",
-        "img": "/image/ic_figma.svg",
-        "desc": "UI/UX 디자인 협업",
-        "detail": "디자인 시안을 분석하고 개발 가능한 형태로 구현할 수 있습니다."
-    }
+  {
+    "name": "HTML",
+    "img": "/image/ic_html.svg",
+    "desc": "구조적인 마크업",
+    "detail": "웹 표준과 접근성을 고려해 시맨틱 태그로 페이지 구조를 작성할 수 있습니다."
+  },
+  {
+    "name": "CSS",
+    "img": "/image/ic_css.svg",
+    "desc": "반응형 레이아웃 구현",
+    "detail": "Flex, Grid, Media Query를 활용해 다양한 디바이스에 대응하는 화면을 구현할 수 있습니다."
+  },
+  {
+    "name": "SCSS",
+    "img": "/image/ic_scss.svg",
+    "desc": "유지보수 가능한 스타일 관리",
+    "detail": "변수, 중첩 문법, 믹스인을 활용해 효율적으로 스타일을 관리할 수 있습니다."
+  },
+  {
+    "name": "JavaScript",
+    "img": "/image/ic_js.svg",
+    "desc": "동적 인터랙션 구현",
+    "detail": "이벤트 처리와 배열 메서드를 활용해 사용자 중심의 인터랙션을 구현할 수 있습니다."
+  },
+  {
+    "name": "React",
+    "img": "/image/ic_react.svg",
+    "desc": "컴포넌트 기반 개발",
+    "detail": "컴포넌트 단위로 UI를 구성하고 State와 Props를 활용해 화면을 개발할 수 있습니다."
+  },
+  {
+    "name": "Next.js",
+    "img": "/image/ic_nextjs.svg",
+    "desc": "풀스택 웹 애플리케이션 개발",
+    "detail": "App Router 기반으로 페이지를 구성하고 최적화된 웹 서비스를 개발할 수 있습니다."
+  },
+  {
+    "name": "Vue",
+    "img": "/image/ic_vue.svg",
+    "desc": "컴포넌트 기반 개발",
+    "detail": "재사용 가능한 컴포넌트를 활용하여 효율적인 화면을 구성하고, 반응형 데이터 바인딩으로 동적인 사용자 인터페이스를 구현할 수 있습니다."
+  },
+  {
+    "name": "Express",
+    "img": "/image/ic_express.svg",
+    "desc": "Node.js 기반 백엔드 개발",
+    "detail": "REST API를 구축하고 데이터의 조회, 추가, 수정, 삭제(CRUD) 기능을 구현할 수 있습니다."
+  },
+  {
+    "name": "MongoDB",
+    "img": "/image/ic_mongodb.svg",
+    "desc": "데이터베이스 활용",
+    "detail": "MongoDB를 활용해 데이터를 저장하고 조회하는 기능을 구현할 수 있습니다."
+  },
+  {
+    "name": "GitHub",
+    "img": "/image/ic_github.svg",
+    "desc": "버전 관리 및 협업",
+    "detail": "GitHub를 활용해 프로젝트 이력을 관리하고 협업할 수 있습니다."
+  },
+  {
+    "name": "Vercel",
+    "img": "/image/ic_vercel.svg",
+    "desc": "프로젝트 배포",
+    "detail": "Vercel을 활용해 웹 서비스를 배포하고 환경 변수를 관리할 수 있습니다."
+  },
+  {
+    "name": "Figma",
+    "img": "/image/ic_figma.svg",
+    "desc": "UI/UX 디자인 협업",
+    "detail": "디자인 시안을 분석하고 개발 가능한 형태로 구현할 수 있습니다."
+  }
 ]

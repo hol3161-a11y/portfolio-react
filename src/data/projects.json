@@ -97,8 +97,8 @@
         "img": "/image/ic_mongodb.svg"
       },
       {
-        "name": "Zustand",
-        "img": "/image/ic_zustand.svg"
+        "name": "Express",
+        "img": "/image/ic_express.svg"
       }
     ],
     "website": "https://team-store-pilot.vercel.app/",
