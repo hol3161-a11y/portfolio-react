@@ -3,12 +3,16 @@
   min-height: 100vh;
   padding: 120px 0;
   background:
-    radial-gradient(circle at 0% 100%,
+    radial-gradient(
+      circle at 0% 100%,
       rgba(80, 140, 255, 0.12),
-      transparent 32%),
-    radial-gradient(circle at 100% 0%,
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 100% 0%,
       rgba(255, 214, 80, 0.18),
-      transparent 34%),
+      transparent 34%
+    ),
     #faf9f5;
   overflow: hidden;
 }
@@ -335,6 +339,11 @@
 
     h2 {
       font-size: 44px;
+      gap: 10px;
+
+      img {
+        width: 40px;
+      }
     }
 
     p {
@@ -364,7 +373,12 @@
 
   .projectTitle {
     h2 {
-      font-size: 38px;
+      font-size: 44px;
+      gap: 8px;
+
+      img {
+        width: 35px;
+      }
     }
   }
 
