@@ -5,6 +5,11 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  const handleMove = (id) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +52,10 @@ function Header() {
             <a
               href="#home"
               className={activeSection === "home" ? "active" : ""}
-              onClick={() => setActiveSection("home")}
+              onClick={(e) => {
+                e.preventDefault();
+                handleMove("home");
+              }}
             >
               HOME
             </a>
@@ -55,7 +63,10 @@ function Header() {
             <a
               href="#about"
               className={activeSection === "about" ? "active" : ""}
-              onClick={() => setActiveSection("about")}
+              onClick={(e) => {
+                e.preventDefault();
+                handleMove("about");
+              }}
             >
               ABOUT
             </a>
@@ -63,7 +74,10 @@ function Header() {
             <a
               href="#projects"
               className={activeSection === "projects" ? "active" : ""}
-              onClick={() => setActiveSection("projects")}
+              onClick={(e) => {
+                e.preventDefault();
+                handleMove("projects");
+              }}
             >
               PROJECTS
             </a>
@@ -71,7 +85,10 @@ function Header() {
             <a
               href="#contact"
               className={activeSection === "contact" ? "active" : ""}
-              onClick={() => setActiveSection("contact")}
+              onClick={(e) => {
+                e.preventDefault();
+                handleMove("contact");
+              }}
             >
               CONTACT
             </a>

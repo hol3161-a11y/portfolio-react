@@ -333,7 +333,7 @@
   }
 
   .dandelion {
-    width: 235px;
+    width: 200px;
     right: 8%;
     opacity: 0.75;
   }
@@ -412,18 +412,53 @@
   }
 
   .dandelion {
-    width: 215px;
-    right: 6%;
-    opacity: 0.65;
+    display: none;
   }
 
   .seed {
     display: none;
+    animation: none;
+    opacity: 0.75;
+    width: 24px;
+  }
+
+  .seed01,
+  .seed02,
+  .seed03,
+  .seed04 {
+    display: block;
+  }
+
+  .seed01 {
+    right: 18%;
+    top: 25%;
+    transform: rotate(-18deg);
+    width: 22%;
+  }
+
+  .seed02 {
+    right: 8%;
+    top: 15%;
+    transform: rotate(50deg);
+  }
+
+  .seed03 {
+    left: 50%;
+    top: 58%;
+    transform: rotate(45deg);
+    width: 11%;
+  }
+
+  .seed04 {
+    right: 10%;
+    top: 71%;
+    transform: rotate(1deg);
+    width: 10%;
   }
 }
 
-@media (max-width: 376px) {
 
+@media (max-width: 376px) {
   .heroText {
     top: 20%;
 
@@ -438,10 +473,5 @@
 
   .scrollDownBtn {
     margin-top: 38px;
-  }
-
-  .dandelion {
-    width: 160px;
-    right: 4%;
   }
 }

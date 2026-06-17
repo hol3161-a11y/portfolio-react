@@ -14,7 +14,7 @@ function Project() {
     <section className="project sectionMove" id="projects">
       <div className="projectInner">
         <div className="projectTitle">
-          <h2>Projects</h2>
+          <h2>Projects <img src="/image/seed.png" /> </h2>
           <p>
             배움과 경험을 바탕으로
             <br />

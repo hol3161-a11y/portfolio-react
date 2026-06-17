@@ -8,7 +8,13 @@
     "desc": "실시간 날씨 데이터를 기반으로 코디, 음악, 야외활동을 추천하는 라이프스타일 서비스입니다.",
     "img": "/image/weather-mood-thumb.png",
     "detail": "/image/project_weathermood_detail.png",
-    "tags": ["Figma", "HTML", "CSS", "JavaScript"],
+    "tags": [
+      "Figma",
+      "API",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "skills": [
       {
         "name": "Figma",
@@ -29,9 +35,6 @@
       {
         "name": "Swiper",
         "img": "/image/ic_swiper.svg"
-      },
-      {
-        "name": "공공데이터포털 날씨 API"
       }
     ],
     "website": "https://weather-mood-rho.vercel.app/",
@@ -65,7 +68,13 @@
     "img": "/image/store-pilot-thumb.png",
     "detail": "/image/project_storepliot_detail.png",
     "favicon": "/image/storePilot_favicon.ico.png",
-    "tags": ["Next.js", "SCSS", "MongoDB", "JavaScript"],
+    "tags": [
+      "Next.js",
+      "SCSS",
+      "MongoDB",
+      "JavaScript",
+      "Google AI Studio"
+    ],
     "skills": [
       {
         "name": "Figma",
@@ -90,9 +99,6 @@
       {
         "name": "Zustand",
         "img": "/image/ic_zustand.svg"
-      },
-      {
-        "name": "Google AI Studio"
       }
     ],
     "website": "https://team-store-pilot.vercel.app/",
@@ -106,13 +112,13 @@
       "category": "AI 기반 매장 운영 관리 시스템"
     },
     "features": [
-      "직원 등록, 수정, 삭제 기능",
+      "AI 챗봇 인터페이스를 통한 매장 관리 지원",
+      "AI 기반 매출 데이터 분석 및 통계 제공",
+      "AI 기반 메뉴 데이터 관리 및 분석",
+      "매출, 직원, 메뉴 정보 등록·수정·삭제",
       "직원 정보 기반 근무표 관리",
       "요일별 근무 스케줄 확인",
-      "일/주/월 인건비 계산",
-      "매장 운영 데이터 시각화",
-      "AI 기반 매출 및 운영 분석",
-      "챗봇 인터페이스를 통한 매장 관리 지원"
+      "일·주·월 인건비 계산 및 분석"
     ],
     "trouble": "직원 정보를 수정할 때 기존 데이터와 새로 입력한 데이터가 정확하게 구분되지 않아 다른 직원 정보에 영향을 줄 수 있는 문제가 있었습니다. 이를 해결하기 위해 수정 중인 직원의 id를 기준으로 상태를 분리하고, 저장 시 해당 id와 일치하는 데이터만 업데이트되도록 로직을 개선했습니다. 또한 직원 정보가 변경되었을 때 근무표와 인건비 계산에도 반영될 수 있도록 데이터 흐름을 점검했습니다.",
     "learned": "이번 프로젝트를 통해 관리자 서비스에서 데이터의 흐름을 설계하는 방법을 배웠습니다. 단순히 화면을 구현하는 것뿐만 아니라 직원 정보, 근무표, 인건비 계산처럼 서로 연결된 데이터를 어떻게 관리해야 하는지 이해할 수 있었습니다. 또한 CRUD 기능과 MongoDB 연동, 반응형 관리자 UI 구성 경험을 쌓을 수 있었습니다."
@@ -126,7 +132,13 @@
     "img": "/image/project_learnhub.png",
     "detail": "/image/project_learnhub_detail.png",
     "favicon": "/image/learnhub_favicon.ico.png",
-    "tags": ["Next.js", "JavaScript", "SCSS", "NextAuth"],
+    "tags": [
+      "Next.js",
+      "JavaScript",
+      "SCSS",
+      "NextAuth",
+      "LocalStorage"
+    ],
     "skills": [
       {
         "name": "Figma",
@@ -147,12 +159,6 @@
       {
         "name": "Swiper",
         "img": "/image/ic_swiper.svg"
-      },
-      {
-        "name": "NextAuth"
-      },
-      {
-        "name": "LocalStorage"
       }
     ],
     "website": "https://learnhub-nextjs.vercel.app/",
@@ -188,7 +194,12 @@
     "img": "/image/project_todolist.png",
     "detail": "/image/project_todolist_detail.png",
     "favicon": "/image/Todolist_favicon.ico.png",
-    "tags": ["React", "Node.js", "MongoDB", "CSS"],
+    "tags": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "CSS"
+    ],
     "skills": [
       {
         "name": "React",
@@ -204,11 +215,11 @@
       },
       {
         "name": "CSS",
-        "img": "/image/ic_scss.svg"
+        "img": "/image/ic_css.svg"
       }
     ],
     "website": "https://react-todo-rbz1.vercel.app/",
-    "github": "#",
+    "github": "https://github.com/hol3161-a11y/react-todo",
     "overview": "Todo List는 사용자가 해야 할 일을 등록하고 진행 상태를 관리할 수 있도록 제작한 할 일 관리 웹 애플리케이션입니다. 할 일을 추가하고 수정, 삭제할 수 있으며 완료 여부에 따라 진행 중인 할 일과 완료된 할 일을 구분해서 확인할 수 있습니다. 단순한 기능이지만 React 상태 관리와 서버 연동, CRUD 흐름을 익히기 위해 제작했습니다.",
     "projectInfo": {
       "projectType": "개인 프로젝트",
@@ -238,7 +249,12 @@
     "img": "/image/project_portfolio.png",
     "detail": "/image/project_portfolio_detail.png",
     "favicon": "/image/protfolio_favicon.ico.png",
-    "tags": ["React", "SCSS", "EmailJS", "Swiper"],
+    "tags": [
+      "React",
+      "SCSS",
+      "EmailJS",
+      "Swiper"
+    ],
     "skills": [
       {
         "name": "React",
@@ -259,14 +275,11 @@
       {
         "name": "Figma",
         "img": "/image/ic_figma.svg"
-      },
-      {
-        "name": "EmailJS"
       }
     ],
     "website": "https://leeyewon-portfolio.vercel.app/",
     "github": "https://github.com/hol3161-a11y/portfolio-react",
-    "overview": "Portfolio는 저의 성장 과정과 기술 역량, 프로젝트 경험을 소개하기 위해 제작한 개인 포트폴리오 웹사이트입니다. 민들레의 씨앗이 자라 꽃을 피우는 과정을 성장하는 개발자의 이미지와 연결하여 전체 콘셉트를 구성했습니다. Hero, About, Skills, Projects, Contact 섹션으로 구성했으며, 프로젝트 상세 페이지와 이메일 전송 기능을 통해 포트폴리오의 완성도를 높였습니다.",
+    "overview": "Portfolio는 민들레의 성장 과정을 모티브로 제작한 개인 포트폴리오 웹사이트입니다. 작은 씨앗에서 시작해 꽃을 피우는 과정처럼 저의 성장 과정과 프로젝트 경험을 담아냈으며, 기술 역량과 개발 경험을 효과적으로 전달할 수 있도록 구성했습니다.",
     "projectInfo": {
       "projectType": "개인 프로젝트",
       "period": "2026.06",
@@ -296,7 +309,12 @@
     "img": "/image/Now-News-thumb.png",
     "detail": "/image/project_nownews_detail.png",
     "favicon": "/image/nownews_favicon.ico.png",
-    "tags": ["Vue", "API", "SCSS", "JavaScript"],
+    "tags": [
+      "Vue",
+      "API",
+      "SCSS",
+      "JavaScript"
+    ],
     "skills": [
       {
         "name": "Vue",
@@ -309,9 +327,6 @@
       {
         "name": "SCSS",
         "img": "/image/ic_scss.svg"
-      },
-      {
-        "name": "Naver News API"
       }
     ],
     "website": "https://news-beryl.vercel.app/",

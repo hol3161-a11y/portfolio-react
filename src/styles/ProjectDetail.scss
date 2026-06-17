@@ -4,11 +4,9 @@
   padding: 120px 0;
   background:
     radial-gradient(circle at 0% 0%, rgba(80, 140, 255, 0.12), transparent 32%),
-    radial-gradient(
-      circle at 100% 0%,
+    radial-gradient(circle at 100% 0%,
       rgba(255, 214, 80, 0.18),
-      transparent 34%
-    ),
+      transparent 34%),
     #faf9f5;
 }
 
@@ -258,7 +256,7 @@
 
 .topBtn {
   position: fixed;
-  right: 40px;
+  right: 65px;
   bottom: 40px;
 
   display: flex;
@@ -283,6 +281,8 @@
     font-weight: 700;
     letter-spacing: 2px;
     color: #10204f;
+    margin-top: 8px;
+    padding-left: 4.5px;
   }
 
   &:hover img {
@@ -300,6 +300,26 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .detailInner {
+    width: calc(100% - 80px);
+  }
+
+  .detailHero {
+    gap: 50px;
+  }
+
+  .detailText {
+    h2 {
+      font-size: 54px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .projectDetail {
     padding: 100px 0;
@@ -312,50 +332,108 @@
   .detailHero {
     grid-template-columns: 1fr;
     gap: 44px;
+    margin-bottom: 80px;
   }
 
   .detailText {
     h2 {
-      font-size: 52px;
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 21px;
+    }
+  }
+
+  .detailMockup {
+    padding: 26px;
+  }
+
+  .detailSection {
+    padding: 40px 34px;
+  }
+
+  .topBtn {
+    right: 28px;
+    bottom: 28px;
+
+    img {
+      width: 52px;
+      height: 52px;
     }
   }
 }
 
 @media (max-width: 768px) {
   .projectDetail {
-    padding: 80px 0;
+    padding: 90px 0 70px;
   }
 
   .detailInner {
     width: calc(100% - 36px);
   }
 
+  .backBtn {
+    margin-bottom: 36px;
+    font-size: 15px;
+  }
+
   .detailHero {
+    gap: 34px;
     margin-bottom: 60px;
   }
 
   .detailText {
+    span {
+      font-size: 12px;
+      margin-bottom: 14px;
+    }
+
     h2 {
-      font-size: 42px;
+      font-size: 40px;
+      line-height: 1.12;
     }
 
     h3 {
-      font-size: 19px;
+      font-size: 18px;
+      line-height: 1.5;
     }
 
     p {
       font-size: 16px;
+      line-height: 1.75;
     }
   }
 
   .detailMockup {
     padding: 18px;
     border-radius: 24px;
+
+    img {
+      border-radius: 18px;
+    }
   }
 
   .detailSection {
+    margin-bottom: 42px;
     padding: 30px 22px;
     border-radius: 24px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 22px;
+    }
+  }
+
+  .sectionContent,
+  .textBox {
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+    }
   }
 
   .projectInfoBox,
@@ -363,25 +441,185 @@
     grid-template-columns: 1fr;
   }
 
-  .detailLinks {
-    flex-direction: column;
+  .projectInfoBox {
+    dl {
+      padding: 20px;
+    }
 
-    a {
-      justify-content: center;
+    dd {
+      font-size: 15px;
     }
   }
+
+  .featureItem {
+    padding: 20px;
+    gap: 12px;
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .techList {
+    gap: 14px;
+  }
+
+  .techItem {
+    padding: 12px 16px;
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.06),
+      0 2px 4px rgba(0, 0, 0, 0.04);
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .projectFavicon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 22px;
+  }
+
+  .detailLinks {
+    flex-direction: column;
+    gap: 16px;
+
+    a {
+      width: 100%;
+      min-width: auto;
+      height: 62px;
+      font-size: 16px;
+      border-radius: 18px;
+    }
+  }
+
+  .topBtn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    background: #ffd96b;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
 }
 
+
 @media (max-width: 480px) {
+  .projectDetail {
+    padding: 82px 0 60px;
+  }
+
+  .detailInner {
+    width: calc(100% - 28px);
+  }
+
+  .backBtn {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
   .detailText {
     h2 {
-      font-size: 34px;
+      font-size: 32px;
     }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .detailMockup {
+    padding: 12px;
+    border-radius: 20px;
+
+    img {
+      border-radius: 16px;
+    }
+  }
+
+  .detailSection {
+    padding: 26px 18px;
+    border-radius: 20px;
   }
 
   .sectionTitle {
     h3 {
       font-size: 20px;
+    }
+  }
+
+  .projectInfoBox {
+    gap: 14px;
+
+    dl {
+      padding: 18px;
+      border-radius: 16px;
+    }
+
+    dt {
+      font-size: 13px;
+    }
+
+    dd {
+      font-size: 14px;
+    }
+  }
+
+  .featureItem {
+    padding: 18px;
+    border-radius: 16px;
+
+    span {
+      font-size: 13px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .techItem {
+    padding: 10px 14px;
+
+    span {
+      font-size: 13px;
+    }
+  }
+
+  .topBtn {
+    img {
+      width: 42px;
+      height: 42px;
     }
   }
 }
