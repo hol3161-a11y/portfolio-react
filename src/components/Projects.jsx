@@ -11,8 +11,8 @@ import projects from "../data/projects.json";
 
 function Project() {
   return (
-    <section className="project sectionMove" id="projects">
-      <div className="projectInner">
+    <section className="project" id="projects">
+      <div className="projectInner sectionMove">
         <div className="projectTitle">
           <h2>Projects <img src="/image/seed.png" /> </h2>
           <p>

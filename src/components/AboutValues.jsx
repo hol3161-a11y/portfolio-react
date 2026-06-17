@@ -4,8 +4,8 @@ import Skills from "./Skills";
 
 function AboutValues() {
   return (
-    <section className="aboutValues sectionMove" id="about">
-      <div className="aboutInner">
+    <section className="aboutValues" id="about">
+      <div className="aboutInner sectionMove">
         <div className="sectionTitle">
           <span></span>
           <p>MY VALUES</p>
@@ -45,9 +45,8 @@ function AboutValues() {
             <h3>KD아카데미컴퓨터학원</h3>
 
             <strong>
-              생성형 AI 기반 UX/UI 디자인 & 프론트엔드 개발 과정
-              (ChatGPT, 일러스트레이터, 포토샵, Figma,
-              JavaScript, React)
+              생성형 AI 기반 UX/UI 디자인 & 프론트엔드 개발 과정 (ChatGPT,
+              일러스트레이터, 포토샵, Figma, JavaScript, React)
             </strong>
 
             <div className="trainingTags">
@@ -61,7 +60,7 @@ function AboutValues() {
         </div>
       </div>
 
-      <Skills />
+        <Skills />
     </section>
   );
 }

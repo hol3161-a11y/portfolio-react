@@ -34,8 +34,8 @@ function Contact() {
   };
 
   return (
-    <section className="contact sectionMove" id="contact">
-      <div className="contactInner">
+    <section className="contact" id="contact">
+      <div className="contactInner  sectionMove">
         <div className="contactLeft">
           <h2>Contact</h2>
 

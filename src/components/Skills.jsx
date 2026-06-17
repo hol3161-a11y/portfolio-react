@@ -5,7 +5,7 @@ function Skills() {
   const [flipped, setFlipped] = useState(null);
 
   return (
-    <div className="skills">
+    <div className="skills sectionMove">
       <div className="skillsText">
         <span></span>
         <h2>TECH STACK</h2>
