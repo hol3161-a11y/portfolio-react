@@ -83,7 +83,6 @@
 
 .detailMockup {
   position: relative;
-  min-height: 400px;
   padding: 28px;
   border-radius: 24px;
   overflow: hidden;
@@ -102,9 +101,11 @@
     opacity: 1;
   }
 }
+
 .skeleton {
   position: absolute;
-  inset: 0;
+  inset: 28px;
+  border-radius: 20px;
   background: linear-gradient(90deg, #eef1f7 25%, #f8f9fc 50%, #eef1f7 75%);
   background-size: 200% 100%;
   animation: skeletonLoading 1.4s infinite;
@@ -376,6 +377,14 @@
 
   .detailMockup {
     padding: 24px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .skeleton {
+    inset: 24px;
   }
 
   .detailSection {
@@ -439,8 +448,14 @@
     border-radius: 24px;
 
     img {
+      width: 100%;
       border-radius: 18px;
     }
+  }
+
+  .skeleton {
+    inset: 18px;
+    border-radius: 18px;
   }
 
   .detailSection {
@@ -592,6 +607,11 @@
     img {
       border-radius: 16px;
     }
+  }
+
+  .skeleton {
+    inset: 12px;
+    border-radius: 16px;
   }
 
   .detailSection {
