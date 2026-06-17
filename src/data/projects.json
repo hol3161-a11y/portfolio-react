@@ -210,6 +210,10 @@
         "img": "/image/ic_node.svg"
       },
       {
+        "name": "Express",
+        "img": "/image/ic_express.svg"
+      },
+      {
         "name": "MongoDB",
         "img": "/image/ic_mongodb.svg"
       },
