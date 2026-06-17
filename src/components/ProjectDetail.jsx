@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProjectDetail.scss";
 import projects from "../data/projects.json";
@@ -6,9 +6,11 @@ import projects from "../data/projects.json";
 function ProjectDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const [detailLoaded, setDetailLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setDetailLoaded(false);
   }, [slug]);
 
   const project = projects.find((item) => item.slug === slug);
@@ -57,7 +59,18 @@ function ProjectDetail() {
           </div>
 
           <div className="detailMockup">
-            <img src={project.detail} alt={project.title} />
+            {!detailLoaded && <div className="skeleton" />}
+
+            <img
+              src={project.detail}
+              alt={project.title}
+              className={detailLoaded ? "show" : ""}
+              onLoad={() => setDetailLoaded(true)}
+              onError={(e) => {
+                e.currentTarget.src = "/image/no-image.png";
+                setDetailLoaded(true);
+              }}
+            />
           </div>
         </div>
 
