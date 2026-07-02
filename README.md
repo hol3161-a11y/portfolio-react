@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+# 🌼 Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **작은 씨앗에서 시작해 꾸준한 성장으로 꽃을 피우는 프론트엔드 개발자, 이예원입니다.**
 
-## Available Scripts
+React를 기반으로 제작한 개인 포트폴리오 웹사이트입니다.
+프로젝트 경험과 기술 스택을 한눈에 확인할 수 있도록 구성했으며,
+직접 구현한 프로젝트와 성장 과정을 담았습니다.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔗 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Portfolio** : (배포 링크)
+* **GitHub** : (Repository 링크)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📅 Development Period
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**2026.06 ~ 2026.06**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🏠 Home
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Seed → Grow → Bloom 컨셉의 메인 화면
+* 스크롤 애니메이션
+* 반응형 레이아웃
 
-### `npm run eject`
+### 👨‍💻 Tech
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* 사용 가능한 기술 스택 소개
+* Front-End / Back-End / Tools 분류
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📂 Projects
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* 프로젝트 목록 제공
+* 프로젝트 상세 페이지 이동
+* 사용 기술 및 주요 기능 확인
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📱 Responsive
 
-## Learn More
+* Desktop / Tablet / Mobile 대응
+* 다양한 화면 크기에 최적화된 UI
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 📧 Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* EmailJS를 활용한 문의 기능
+* GitHub 및 이메일 링크 제공
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 🛠 Tech Stack
 
-### Analyzing the Bundle Size
+### Front-End
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* HTML5
+* CSS3
+* SCSS
+* JavaScript (ES6+)
+* TypeScript
+* React
+* Next.js
 
-### Making a Progressive Web App
+### Back-End
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Node.js
+* Express
+* REST API
 
-### Advanced Configuration
+### Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* MongoDB
 
-### Deployment
+### Tools
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Git
+* GitHub
+* Figma
+* VS Code
+* Vercel
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 📁 Project
+
+| Project         | Description                               | Tech                    |
+| --------------- | ----------------------------------------- | ----------------------- |
+| 🌤 Weather Mood | 날씨 데이터를 기반으로 코디, 음악, 야외활동을 추천하는 모바일 웹 서비스 | HTML, CSS, JavaScript   |
+| 🏪 StorePilot   | AI 기반 스마트 매장 운영 관리 서비스                    | Next.js, MongoDB, SCSS  |
+| 🎓 Learn Hub    | 온라인 교육 플랫폼                                | Next.js, React, MongoDB |
+| ✅ Todo List     | CRUD 기능을 제공하는 할 일 관리 서비스                  | React, Express, MongoDB |
+| 📰 Now News     | 네이버 뉴스 API 기반 뉴스 검색 서비스                   | Vue.js                  |
+
+---
+
+# 📂 Folder Structure
+
+```bash
+src
+ ├── assets
+ ├── components
+ ├── data
+ ├── pages
+ ├── styles
+ ├── router
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone (repository)
+
+cd portfolio
+
+npm install
+
+npm run dev
+```
+
+---
+
+# 💡 Main Libraries
+
+* React Router
+* EmailJS
+* Framer Motion
+* Swiper
+* SCSS
+
+---
+
+# 📱 Responsive
+
+* Desktop
+* Tablet
+* Mobile
+
+모든 디바이스에서 동일한 사용자 경험을 제공하도록 반응형으로 제작했습니다.
+
+---
+
+# 📫 Contact
+
+* **Email** : [hol3161@gmail.com](mailto:hol3161@gmail.com)
+* **GitHub** : https://github.com/hol3161-a11y
+
+---
+
+## 🌱 About Me
+
+새로운 기술을 배우고 직접 구현하며 성장하는 과정을 즐기는 프론트엔드 개발자입니다.
+
+단순히 화면을 만드는 것을 넘어 사용자의 경험을 고려한 UI와 유지보수가 쉬운 구조를 고민하며 개발하고 있습니다.
+
+앞으로도 꾸준한 학습과 다양한 프로젝트를 통해 한 단계씩 성장해 나가겠습니다.
