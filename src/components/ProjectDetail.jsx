@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProjectDetail.scss";
 import projects from "../data/projects.json";
@@ -6,11 +6,11 @@ import projects from "../data/projects.json";
 function ProjectDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const [detailLoaded, setDetailLoaded] = useState(false);
+
+  const numbers = ["①", "②", "③", "④"];
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDetailLoaded(false);
   }, [slug]);
 
   const project = projects.find((item) => item.slug === slug);
@@ -40,7 +40,11 @@ function ProjectDetail() {
     <section className="projectDetail">
       <div className="detailInner">
         <button className="backBtn" onClick={() => navigate(-1)}>
-          ← 프로젝트로 돌아가기
+          <span className="material-symbols-outlined">
+            arrow_back
+          </span>
+
+          프로젝트 돌아가기
         </button>
 
         <div className="detailHero">
@@ -59,16 +63,11 @@ function ProjectDetail() {
           </div>
 
           <div className="detailMockup">
-            {!detailLoaded && <div className="skeleton" />}
-
             <img
               src={project.detail}
               alt={project.title}
-              className={detailLoaded ? "show" : ""}
-              onLoad={() => setDetailLoaded(true)}
               onError={(e) => {
                 e.currentTarget.src = "/image/no-image.png";
-                setDetailLoaded(true);
               }}
             />
           </div>
@@ -99,11 +98,28 @@ function ProjectDetail() {
             </dl>
             <dl>
               <dt>담당 역할</dt>
-              <dd>{project.projectInfo?.role}</dd>
+              <dd>
+                <ul className="roleList">
+                  {project.projectInfo?.role?.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </dd>
             </dl>
             <dl>
               <dt>기여도</dt>
-              <dd>{project.projectInfo?.contribution}</dd>
+              <dd className="contributionBox">
+                <strong>{project.projectInfo?.contribution?.percent}</strong>
+
+                <ul>
+                  {project.projectInfo?.contribution?.items?.map((item, index) => (
+                    <li key={index}>
+                      <span>{item.title}</span>
+                      <b>{item.percent}</b>
+                    </li>
+                  ))}
+                </ul>
+              </dd>
             </dl>
             <dl>
               <dt>프로젝트 분야</dt>
@@ -135,7 +151,6 @@ function ProjectDetail() {
           <div className="featureList">
             {project.features?.map((feature, index) => (
               <div className="featureItem" key={index}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
                 <p>{feature}</p>
               </div>
             ))}
@@ -146,8 +161,31 @@ function ProjectDetail() {
           <div className="sectionTitle">
             <h3>05. 트러블 슈팅</h3>
           </div>
-          <div className="textBox">
-            <p>{project.trouble}</p>
+
+          <div className="troubleList">
+            {project.trouble.map((item, index) => (
+              <div className="troubleItem" key={index}>
+                <h4>
+                  <span className="troubleNumber">{numbers[index]}</span>
+                  {item.title}
+                </h4>
+
+                <p>
+                  <strong>문제</strong>
+                  {item.problem}
+                </p>
+
+                <p>
+                  <strong>해결</strong>
+                  {item.solution}
+                </p>
+
+                <p>
+                  <strong>결과</strong>
+                  {item.result}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 

@@ -44,11 +44,12 @@ function Contact() {
             <br />
             프론트엔드 개발자입니다.
 
-            <b>
-              Frontend Developer Lee Ye Won
+            <b className="developerName">
+              Frontend Developer Lee Ye Won.
             </b>
 
           </p>
+          <div className="contactInfo">
             <span>
               <img
                 src="/image/ic_email.svg"
@@ -66,19 +67,9 @@ function Contact() {
               />
               010-8591-3161
             </span>
+          </div>
         </div>
 
-        <div className="flowerWrap">
-          <img src="/image/seed.png" alt="" className="seed seed07" />
-          <img src="/image/seed.png" alt="" className="seed seed08" />
-          <img src="/image/seed.png" alt="" className="seed seed09" />
-
-          <img
-            src="/image/dandelion-flower.png"
-            alt="민들레"
-            className="flower"
-          />
-        </div>
 
         <form ref={form} onSubmit={sendEmail} className="contactForm">
           <input
@@ -103,7 +94,9 @@ function Contact() {
 
           <button type="submit" disabled={isSending}>
             {isSending ? "SENDING..." : "SEND MESSAGE"}
-            <span>→</span>
+            <span className="material-symbols-outlined">
+              send
+            </span>
           </button>
         </form>
       </div>
@@ -127,6 +120,17 @@ function Contact() {
           </a>
         </div>
       </footer>
+      <div className="flowerWrap">
+        <img src="/image/seed.png" alt="" className="seed seed07" />
+        <img src="/image/seed.png" alt="" className="seed seed08" />
+        <img src="/image/seed.png" alt="" className="seed seed09" />
+
+        <img
+          src="/image/dandelion-flower.png"
+          alt="민들레"
+          className="flower"
+        />
+      </div>
     </section>
   );
 }
