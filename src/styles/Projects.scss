@@ -3,16 +3,12 @@
   min-height: 100vh;
   padding: 120px 0;
   background:
-    radial-gradient(
-      circle at 0% 100%,
+    radial-gradient(circle at 0% 100%,
       rgba(80, 140, 255, 0.12),
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 100% 0%,
+      transparent 32%),
+    radial-gradient(circle at 100% 0%,
       rgba(255, 214, 80, 0.18),
-      transparent 34%
-    ),
+      transparent 34%),
     #faf9f5;
   overflow: hidden;
 }
@@ -54,11 +50,69 @@
 }
 
 .projectSwiper {
-  padding: 0 8px 80px;
+  position: relative;
+  padding: 0 55px 80px;
 
   .swiper-slide {
     height: auto;
     display: flex;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    top: 205px;
+    width: 33px;
+    height: 33px;
+
+    margin-top: 0;
+    margin: 0 5px;
+
+    transform: translateY(-50%);
+
+    padding: 6px; 
+    border-radius: 50%;
+
+    color: #2d3eca;
+    background-color: #eef4ff; 
+
+    box-shadow: 0 6px 18px rgba(45, 62, 202, 0.25);
+   
+
+    z-index: 10; 
+
+    transition:
+      transform 0.15s ease,
+      background-color 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      background-color: #dfe6ff;
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(0.88);
+
+      box-shadow: 0 2px 8px rgba(45, 62, 202, 0.2);
+    }
+
+    &::after {
+      font-size: 12px;
+      font-weight: 700; 
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.3;
+    cursor: default;
   }
 }
 
@@ -130,11 +184,6 @@
     font-size: 12px;
     font-weight: 600;
   }
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
 }
 
 .projectOverlay {

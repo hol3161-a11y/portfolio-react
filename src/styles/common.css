@@ -1,0 +1,14 @@
+body {
+  font-family: "Pretendard", sans-serif;
+}
+
+.sectionMove {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.sectionMove.show {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=common.css.map */

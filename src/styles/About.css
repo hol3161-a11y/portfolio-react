@@ -1,0 +1,565 @@
+.aboutValues {
+  width: 100%;
+  padding: 120px 0;
+  background: radial-gradient(circle at 0% 100%, rgba(80, 140, 255, 0.16), transparent 32%), radial-gradient(circle at 100% 100%, rgba(255, 214, 80, 0.25), transparent 32%), #fbfcff;
+}
+
+.aboutInner {
+  width: calc(100% - 120px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+.sectionTitle span {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #2f6bff;
+}
+.sectionTitle p {
+  font-size: 14px;
+  font-weight: 800;
+  color: #2f6bff;
+  letter-spacing: 0.08em;
+}
+
+.valueList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.valueCard {
+  min-height: 350px;
+  padding: 34px 28px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(220, 226, 240, 0.8);
+  box-shadow: 0 18px 40px rgba(33, 54, 90, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+.valueCard::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(47, 107, 255, 0.08);
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  transition: 0.35s ease;
+}
+.valueCard:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 28px 60px rgba(33, 54, 90, 0.16);
+  border-color: rgba(47, 107, 255, 0.35);
+}
+.valueCard:hover::after {
+  width: 120px;
+  height: 120px;
+  background: rgba(47, 107, 255, 0.12);
+}
+.valueCard:hover strong {
+  color: #2f6bff;
+  transform: translateX(6px);
+}
+.valueCard:hover .iconBox {
+  background: linear-gradient(135deg, #eef4ff, #fff6d8);
+  transform: scale(1.06);
+}
+.valueCard:hover .iconBox img {
+  transform: scale(1.08) rotate(-4deg);
+}
+.valueCard:hover h3 {
+  color: #2f6bff;
+}
+.valueCard strong {
+  align-self: flex-start;
+  font-size: 15px;
+  font-weight: 800;
+  color: #f5b800;
+  transition: 0.35s ease;
+}
+.valueCard .iconBox {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff6d8, #eef4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s ease;
+}
+.valueCard .iconBox img {
+  width: 95px;
+  height: 95px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.35s ease;
+}
+.valueCard h3 {
+  margin-bottom: 22px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #111a35;
+  transition: 0.35s ease;
+}
+.valueCard p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4d5668;
+  word-break: keep-all;
+}
+
+.educationTitle {
+  margin-top: 90px;
+}
+
+.trainingBox {
+  padding: 34px 48px;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(220, 226, 240, 0.8);
+  box-shadow: 0 18px 40px rgba(33, 54, 90, 0.08);
+  display: grid;
+  grid-template-columns: 160px 220px 1fr;
+  align-items: center;
+  gap: 36px;
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+.trainingBox:hover {
+  transform: translateY(-8px);
+  border-color: rgba(47, 107, 255, 0.3);
+  box-shadow: 0 28px 60px rgba(33, 54, 90, 0.15);
+}
+.trainingBox:hover .trainingIcon {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #eef4ff, #fff6d8);
+}
+.trainingBox:hover .trainingText h3 {
+  color: #2f6bff;
+}
+.trainingBox:hover .trainingDate p {
+  transform: translateX(6px);
+}
+
+.trainingIcon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eaf2ff, #f4f8ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s ease;
+}
+.trainingIcon img {
+  width: 78px;
+  height: 78px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.trainingDate {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.trainingDate span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2f6bff;
+  position: relative;
+}
+.trainingDate span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 1px;
+  height: 70px;
+  background: linear-gradient(#2f6bff, transparent);
+}
+.trainingDate p {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2f6bff;
+  transition: 0.35s ease;
+}
+
+.trainingText h3 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #111a35;
+  transition: 0.35s ease;
+}
+.trainingText strong {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #777;
+}
+
+.trainingTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.trainingTags span {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #2f6bff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.skills {
+  width: 75%;
+  padding: 125px 0 0;
+  margin: 0 auto;
+}
+
+.skillsText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 42px;
+}
+.skillsText span {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #10204f;
+}
+.skillsText h2 {
+  font-size: 32px;
+  color: #10204f;
+}
+
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.skillCard {
+  height: 220px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.skillCard.active .cardInner {
+  transform: rotateY(180deg);
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+}
+
+.cardFront,
+.cardBack {
+  width: 100%;
+  height: 100%;
+  padding: 28px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(220, 226, 240, 0.8);
+  box-shadow: 0 12px 30px rgba(20, 30, 60, 0.08);
+  backdrop-filter: blur(8px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardFront img {
+  width: 58px;
+  height: 58px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 22px;
+}
+.cardFront h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #07113a;
+}
+.cardFront p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #39445f;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  background: #07113a;
+  color: #fff;
+  text-align: center;
+}
+.cardBack h3 {
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+.cardBack p {
+  font-size: 14px;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.cardBack span {
+  margin-top: 18px;
+  font-size: 11px;
+  color: #f0c84b;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1600px) {
+  .skills {
+    width: 90%;
+    padding: 120px 0 0;
+  }
+  .aboutInner {
+    width: calc(100% - 100px);
+  }
+}
+@media (max-width: 1200px) {
+  .skillsList,
+  .valueList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trainingBox {
+    grid-template-columns: 120px 1fr;
+    gap: 28px;
+  }
+  .trainingDate {
+    grid-column: 1/3;
+    order: 3;
+  }
+  .trainingText {
+    grid-column: 2/3;
+  }
+}
+@media (max-width: 1024px) {
+  .skills {
+    width: calc(100% - 60px);
+    padding: 90px 0 0;
+  }
+  .aboutValues {
+    padding: 100px 0;
+  }
+  .aboutInner {
+    width: calc(100% - 60px);
+  }
+  .skillCard {
+    height: 210px;
+  }
+  .valueCard {
+    min-height: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .skills {
+    width: calc(100% - 32px);
+    padding: 80px 0 0;
+  }
+  .skillsText {
+    margin-bottom: 32px;
+  }
+  .skillsText h2 {
+    font-size: 28px;
+  }
+  .skillsList,
+  .valueList {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .skillCard {
+    height: 200px;
+  }
+  .aboutValues {
+    padding: 80px 0;
+  }
+  .aboutInner {
+    width: calc(100% - 32px);
+  }
+  .valueCard {
+    min-height: auto;
+    padding: 30px 22px;
+  }
+  .valueCard .iconBox {
+    width: 120px;
+    height: 120px;
+    margin: 8px 0 24px;
+  }
+  .valueCard .iconBox img {
+    width: 76px;
+    height: 76px;
+  }
+  .valueCard h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .valueCard p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .educationTitle {
+    margin-top: 70px;
+  }
+  .trainingBox {
+    grid-template-columns: 1fr;
+    padding: 30px 22px;
+    text-align: center;
+    gap: 22px;
+  }
+  .trainingIcon {
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+  }
+  .trainingIcon img {
+    width: 70px;
+    height: 70px;
+  }
+  .trainingDate {
+    grid-column: auto;
+    order: 2;
+    justify-content: center;
+  }
+  .trainingDate span::after {
+    display: none;
+  }
+  .trainingDate p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .trainingText {
+    grid-column: auto;
+    order: 3;
+  }
+  .trainingText h3 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .trainingText strong {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .trainingTags {
+    justify-content: center;
+  }
+  .trainingTags span {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .skills {
+    padding: 70px 0 0;
+  }
+  .skillsText h2 {
+    font-size: 26px;
+  }
+  .skillCard {
+    height: 190px;
+  }
+  .cardFront,
+  .cardBack {
+    padding: 24px 16px;
+  }
+  .cardFront img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 18px;
+  }
+  .cardFront h3 {
+    font-size: 16px;
+  }
+  .cardFront p {
+    font-size: 13px;
+  }
+  .cardBack h3 {
+    font-size: 17px;
+  }
+  .cardBack p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .aboutValues {
+    padding: 70px 0;
+  }
+  .sectionTitle {
+    margin-bottom: 28px;
+  }
+  .sectionTitle p {
+    font-size: 13px;
+  }
+  .valueCard {
+    padding: 28px 20px;
+  }
+  .valueCard .iconBox {
+    width: 105px;
+    height: 105px;
+  }
+  .valueCard .iconBox img {
+    width: 66px;
+    height: 66px;
+  }
+  .valueCard h3 {
+    font-size: 21px;
+  }
+  .valueCard p {
+    font-size: 14px;
+  }
+  .trainingBox {
+    padding: 28px 20px;
+  }
+  .trainingIcon {
+    width: 96px;
+    height: 96px;
+  }
+  .trainingIcon img {
+    width: 62px;
+    height: 62px;
+  }
+  .trainingDate {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .trainingText h3 {
+    font-size: 20px;
+  }
+  .trainingText strong {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=About.css.map */

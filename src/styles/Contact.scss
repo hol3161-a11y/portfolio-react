@@ -334,14 +334,30 @@
   gap: 1.2rem;
 
   a {
-    color: #222;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: 0.3s;
-
     display: flex;
     align-items: center;
     gap: 0.4rem;
+
+    color: #222;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    transition:
+      filter 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      filter: drop-shadow(0 3px 3px rgba(34, 34, 34, 0.22));
+
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0) scale(0.97);
+
+      filter: drop-shadow(0 1px 2px rgba(34, 34, 34, 0.15));
+    }
   }
 }
 
@@ -615,7 +631,7 @@
     bottom: auto;
 
     .flower {
-      width: 100%;      // 또는 90%, 85%
+      width: 100%; // 또는 90%, 85%
       height: auto;
 
       left: -10%;
@@ -691,6 +707,7 @@
   }
 
   .contactForm {
+
     input,
     textarea {
       padding: 0.95rem 1rem;

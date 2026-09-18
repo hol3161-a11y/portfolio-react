@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProjectDetail.scss";
 import projects from "../data/projects.json";
@@ -6,12 +6,26 @@ import projects from "../data/projects.json";
 function ProjectDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const [showTopButton, setShowTopButton] = useState(false);
 
   const numbers = ["①", "②", "③", "④"];
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [slug]);
+
+  useEffect(()=> {
+    const handleScroll = () => {
+      setShowTopButton(window.scrollY >= 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const project = projects.find((item) => item.slug === slug);
 
@@ -40,11 +54,8 @@ function ProjectDetail() {
     <section className="projectDetail">
       <div className="detailInner">
         <button className="backBtn" onClick={() => navigate(-1)}>
-          <span className="material-symbols-outlined">
-            arrow_back
-          </span>
-
-          프로젝트 돌아가기
+          <img src="/image/ic_arrow-back.svg" alt="" />
+          돌아가기
         </button>
 
         <div className="detailHero">
@@ -220,7 +231,7 @@ function ProjectDetail() {
           </div>
 
           <button
-            className="topBtn"
+            className={`topBtn ${showTopButton ? "is-visible" : ""}`}
             onClick={() =>
               window.scrollTo({
                 top: 0,
