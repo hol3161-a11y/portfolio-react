@@ -8,7 +8,7 @@ function Hero() {
 
       <div className="heroInner">
         <div className="heroText">
-          <span className="subTitle">● FRONT-END DEVELOPER</span>
+          <span className="subTitle">● WEB PUBLISHER & FRONT-END</span>
 
           <h1>
             <span>Seed.</span>
@@ -19,7 +19,7 @@ function Hero() {
           <p>
             작은 씨앗에서 시작해 민들레 꽃처럼 피어나듯,
             <br />
-            매일 성장하는 프론트엔드 개발자 이예원입니다.
+            사용자 경험을 생각하며 성장하는 이예원입니다.
           </p>
 
           <div className="scrollDownBtn">

@@ -37,10 +37,10 @@
   display: block;
   margin: 18px 0 36px;
 
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #8b8b95;
+  color: #696984;
 }
 
 .contactInner {
@@ -243,7 +243,7 @@
   width: 42%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0;
 
   position: relative;
   z-index: 30;
@@ -264,6 +264,15 @@
       border-color: #2d3eca;
       box-shadow: 0 0 0 4px rgba(45, 62, 202, 0.08);
     }
+  }
+
+    label {
+    padding-left: 0.8rem; 
+    margin: 18px 0 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
   }
 
   textarea {
@@ -292,6 +301,7 @@
 
     position: relative;
     z-index: 40;
+    margin-top: 18px;
 
     &:hover {
       transform: translateY(-3px);
@@ -312,7 +322,7 @@
 
 .contactFooter {
   width: 100%;
-  margin-top: 9rem;
+  margin-top: 6rem;
   padding-top: 1.3rem;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 
@@ -459,7 +469,6 @@
   }
 
   .contactFooter {
-    margin-top: 9rem;
 
     p {
       font-size: 13px;
@@ -516,13 +525,17 @@
 
   .contactForm {
     width: 50%;
-    gap: 0.85rem;
+    gap: 0;
 
     input,
     textarea {
       border-radius: 16px;
       padding: 1rem 1.2rem;
       font-size: 0.9rem;
+    }
+
+    label {
+      margin-bottom: 7px;
     }
 
     textarea {
@@ -554,7 +567,7 @@
   }
 
   .contactFooter {
-    margin: 6rem 0;
+    margin: 5rem 0 3rem;
     justify-content: flex-end;
 
     p {
@@ -631,11 +644,11 @@
     bottom: auto;
 
     .flower {
-      width: 100%; // 또는 90%, 85%
+      width: 100%; 
       height: auto;
 
       left: -10%;
-      top: 76%;
+      top: 99%;
 
       transform: scaleX(-1);
     }

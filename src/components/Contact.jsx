@@ -42,10 +42,10 @@ function Contact() {
           <p>
             배움을 실무에 가까운 결과물로 연결하는
             <br />
-            프론트엔드 개발자입니다.
+            웹 퍼블리셔 & 프론트엔드 개발자입니다.
 
             <b className="developerName">
-              Frontend Developer Lee Ye Won.
+              Web Creator Lee Ye Won.
             </b>
 
           </p>
@@ -72,21 +72,27 @@ function Contact() {
 
 
         <form ref={form} onSubmit={sendEmail} className="contactForm">
+          <label htmlFor="user_name">보내는 분의 이름</label>
           <input
+            id="user_name"
             type="text"
             name="user_name"
             placeholder="Name"
             required
           />
 
+          <label htmlFor="user_email">회신받을 이메일</label>
           <input
+            id="user_email"
             type="email"
             name="user_email"
             placeholder="E-mail"
             required
           />
 
+          <label htmlFor="message">문의 내용</label>
           <textarea
+            id="message"
             name="message"
             placeholder="Message"
             required
@@ -94,6 +100,7 @@ function Contact() {
 
           <button type="submit" disabled={isSending}>
             {isSending ? "SENDING..." : "SEND MESSAGE"}
+
             <span className="material-symbols-outlined">
               send
             </span>
