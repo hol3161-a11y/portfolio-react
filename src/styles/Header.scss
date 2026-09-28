@@ -24,6 +24,7 @@
     0 20px 60px rgba(45, 62, 202, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.7);
 
+
   .logo {
     display: flex;
     align-items: center;
@@ -267,6 +268,24 @@
 }
 
 @media (min-width: 769px) {
+  .header {
+    transition: 
+    transform 0.4s ease,
+    opacity 0.3s ease;
+
+    &.visible {
+      transform: translateX(-50%);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    &.hidden {
+      transform: translate(-50%, calc(-100% - 50px));
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
   .mobileMenu {
     display: none;
   }
